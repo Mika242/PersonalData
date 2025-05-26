@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikael Boni's Resume</title>
+  <style>
+    :root {
+      --green-dark: rgb(0, 104, 94);
+      --green-mid: rgb(0, 145, 90);
+      --green-light: rgb(0, 171, 142);
+      --accent: rgb(163, 196, 57);
+      --blue: rgb(86, 180, 192);
+      --orange: rgb(239, 123, 91);
+      --background: #f8f9fa;
+      --text: #333;
+      --card-bg: white;
+      --shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--background);
+      color: var(--text);
+    }
+    header {
+      background: var(--green-dark);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-style: italic;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    aside, section {
+      background: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+    }
+    h2 {
+      color: var(--green-mid);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    .experience {
+      margin-bottom: 1rem;
+    }
+    .experience h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: var(--green-dark);
+    }
+    .experience p {
+      margin: 0.2rem 0;
+    }
+    .skill-tag {
+      display: inline-block;
+      background: var(--green-light);
+      color: white;
+      border-radius: 20px;
+      padding: 0.3rem 0.8rem;
+      margin: 0.2rem;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #888;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-in-out;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mikael Boni</h1>
+  <p>IT Team Leader | BNP Paribas CIB - Front Office ALM & Treasury IT</p>
+</header>
+
+<main>
+  <aside>
+    <h2>Skills</h2>
+
+    <div>
+      <h4>Team Management</h4>
+      <span class="skill-tag">Leadership</span>
+      <span class="skill-tag">Team management</span>
+      <span class="skill-tag">Governance</span>
+      <span class="skill-tag">BAU monitoring</span>
+    </div>
+
+    <div>
+      <h4>Project Management</h4>
+      <span class="skill-tag">Scoping</span>
+      <span class="skill-tag">Project steering</span>
+      <span class="skill-tag">Team coordination</span>
+      <span class="skill-tag">Communication</span>
+    </div>
+
+    <div>
+      <h4>Business Analysis</h4>
+      <span class="skill-tag">Functional analysis</span>
+      <span class="skill-tag">Specifications</span>
+      <span class="skill-tag">Testing / Validation</span>
+      <span class="skill-tag">Communication</span>
+    </div>
+
+    <div>
+      <h4>Development</h4>
+      <span class="skill-tag">Java</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">C</span>
+      <span class="skill-tag">SQL / Sybase</span>
+      <span class="skill-tag">PHP / HTML</span>
+      <span class="skill-tag">Tibco BW</span>
+      <span class="skill-tag">Shell</span>
+      <span class="skill-tag">VBA</span>
+    </div>
+
+    <h2>Interests</h2>
+    <ul>
+      <li>Travel, cultural discovery, and video content creation</li>
+      <li>My YouTube channel: 
+        <a href="https://www.youtube.com/@ExploreTheMap_In_Youtube" target="_blank" style="color: var(--blue); text-decoration: none;">
+          <strong>Travel and World Cultures – Explore the Map</strong> 🎥
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="experience fade-in">
+      <h3>Team Lead - Kondor Interfaces, BNP Paribas CIB</h3>
+      <p><em>Jan 2022 - Present</em></p>
+      <p>Leading an international team (13 members in Paris, 15 in India) for Kondor interfaces, a trading and middle-office software for ALM & Treasury.</p>
+      <p>Managing developers, project managers, and business analysts. Global coordination (EMEA, APAC, Americas).</p>
+      <p>Developing import/export interfaces for electronic deals and accounting systems.</p>
+      <p>Contributing to strategic IT decisions, BAU governance, request handling, and continuous improvement.</p>
+    </div>
+
+    <div class="experience fade-in">
+      <h3>IT Project Manager - IBOR Transition</h3>
+      <p><em>May 2020 - Jan 2022</em></p>
+      <p>Managed the IBOR Transition project for migration to new RFRs (ESTR, SOFR, SONIA, SARON, TONAR).</p>
+      <p>Developed an API for cash flow and rate calculations used by ALMT, Global Banking, and Wealth Management.</p>
+      <p>Created a pre-trade interface to enhance negotiations. Migrated all LIBOR/EONIA deals.</p>
+    </div>
+
+    <div class="experience fade-in">
+      <h3>IT Project Manager - Regulatory</h3>
+      <p><em>Jan 2015 - Jul 2020</em></p>
+      <p>Led regulatory projects (DFA, EMIR, SFTR, MIFID2, IOSCO...) for ALM & Treasury business.</p>
+      <p>Collaborated with reporting teams to DTCC, ECB, BdF, Unavista, Bank of Israel, etc. for IRD, FX, MM, and Securities reports.</p>
+      <p>Monitored clearing, reporting, margin requirements, and market anomaly detection.</p>
+    </div>
+
+    <div class="experience fade-in">
+      <h3>IT Project Manager - Tradeweb Integration</h3>
+      <p><em>Oct 2018 - Sept 2019</em></p>
+      <p>Integrated Tradeweb for internal IRS between buy-side and sell-side desks.</p>
+      <p>Automated RFQs, FO to BO deal transfers, accounting, settlements, and P&L/Risk checks.</p>
+    </div>
+
+    <div class="experience fade-in">
+      <h3>Project Manager / Business Analyst - IRD Clearing</h3>
+      <p><em>Sept 2013 - Dec 2015</em></p>
+      <p>Implemented a clearing solution for IRD products via Markitwire, Tradeweb, Bloomberg, LCH & EUREX.</p>
+      <p>Global coverage (Europe, APAC, North America).</p>
+    </div>
+
+    <div class="experience fade-in">
+      <h3>Business Analyst / Developer - Kondor+</h3>
+      <p><em>Jul 2011 - Jan 2014</em></p>
+      <p>Studied and developed new features, provided functional and technical support for Kondor+ software in ALM & Treasury activities.</p>
+    </div>
+
+    <div class="experience fade-in">
+      <h3>Developer / Analyst - Key for Finance</h3>
+      <p><em>Sept 2003 - Jun 2011</em></p>
+      <p>Participated in various risk management, P&L reporting, credit, and ALM projects in multiple entities:</p>
+      <ul>
+        <li>BNP Paribas CIB (ALM Treasury)</li>
+        <li>CNCE (Fermat)</li>
+        <li>Hypo Public Finance (Atlas Front Arena, Dublin)</li>
+        <li>Hypo Real Estate (Dublin)</li>
+        <li>HypoVereinsbank (Munich)</li>
+      </ul>
+      <p>Expertise in middle-office, financial software, risk, and asset management.</p>
+    </div>
+
+    <div class="experience fade-in">
+      <h3>Engineering Intern - Crédit Lyonnais</h3>
+      <p><em>Feb 2003 - Aug 2003</em></p>
+      <p>Developed solutions around the Murex software for a credit derivatives project.</p>
+    </div>
+
+    <h2>Education</h2>
+    <p>Master's Degree in Computer Science – Pierre and Marie Curie University (1998 - 2003)</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Mikael Boni. All rights reserved.</p>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
+
+</body>
+</html>
